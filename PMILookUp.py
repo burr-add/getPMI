@@ -8,4 +8,4 @@ page = rs.get(PMI_url)
 soup = BeautifulSoup(page.content, 'html.parser')
 headline = soup.find_all('h1')[0].get_text()
 
-print(str(PMI_month)+""+headline)
+print(str(PMI_month)+" "+headline)
